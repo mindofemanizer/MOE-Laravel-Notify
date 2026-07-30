@@ -1,0 +1,55 @@
+<?php
+
+declare(strict_types=1);
+
+namespace MOE\Notify\Channels;
+
+use Illuminate\Support\Facades\Log;
+use MOE\Notify\Contracts\NotificationChannelInterface;
+use MOE\Notify\Models\Notification;
+
+class WhatsappChannel implements NotificationChannelInterface
+{
+    public function __construct(
+        protected array $config = [],
+    ) {}
+
+    public function send(mixed $notifiable, Notification $notification): bool
+    {
+        $phone = $this->getPhone($notifiable);
+
+        if (! $phone) {
+            return false;
+        }
+
+        Log::info("[MOE Notify] WhatsApp sent to {$phone}", [
+            'body' => $notification->body,
+            'driver' => $this->driver(),
+        ]);
+
+        return true;
+    }
+
+    public function driver(): string
+    {
+        return $this->config['driver'] ?? 'log';
+    }
+
+    public function name(): string
+    {
+        return 'whatsapp';
+    }
+
+    protected function getPhone(mixed $notifiable): ?string
+    {
+        if (is_string($notifiable)) {
+            return $notifiable;
+        }
+
+        if (method_exists($notifiable, 'routeNotificationForWhatsapp')) {
+            return $notifiable->routeNotificationForWhatsapp($this);
+        }
+
+        return $notifiable->phone ?? $notifiable->mobile ?? null;
+    }
+}

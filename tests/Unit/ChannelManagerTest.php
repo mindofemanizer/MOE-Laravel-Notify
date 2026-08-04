@@ -5,9 +5,6 @@ declare(strict_types=1);
 use Moe\Notify\Channels\MailChannel;
 use Moe\Notify\Contracts\NotificationChannelInterface;
 use Moe\Notify\Services\ChannelManager;
-use Moe\Notify\Tests\TestCase;
-
-uses(TestCase::class);
 
 beforeEach(function () {
     $this->manager = new ChannelManager;

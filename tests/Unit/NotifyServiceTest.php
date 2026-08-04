@@ -5,9 +5,6 @@ declare(strict_types=1);
 use Moe\Notify\Contracts\NotifierInterface;
 use Moe\Notify\Facades\Notify;
 use Moe\Notify\Models\Notification;
-use Moe\Notify\Tests\TestCase;
-
-uses(TestCase::class);
 
 beforeEach(function () {
     $this->service = app(NotifierInterface::class);

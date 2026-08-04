@@ -1,6 +1,6 @@
-# MOE Laravel Notify
+﻿# MOE Laravel Notify
 
-Package notifikasi multichannel untuk Laravel — email, SMS, WhatsApp, in-app, dan push.
+Package notifikasi multichannel untuk Laravel â€” email, SMS, WhatsApp, in-app, dan push.
 
 ## Persyaratan
 
@@ -10,7 +10,7 @@ Package notifikasi multichannel untuk Laravel — email, SMS, WhatsApp, in-app, 
 ## Instalasi
 
 ```bash
-composer require moe/laravel-notify
+composer require moe/laravel-notify:dev-main
 php artisan vendor:publish --provider="Moe\\Notify\\NotifyServiceProvider" --tag="moe-notify-config"
 php artisan migrate
 ```
@@ -134,4 +134,4 @@ composer test
 
 ## Lisensi
 
-MIT © MOE (MindOfEmanizer)
+MIT Â© MOE (MindOfEmanizer)

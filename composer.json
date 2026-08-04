@@ -3,12 +3,26 @@
     "description": "MOE multi-channel notification package for Laravel — email, SMS, WhatsApp, in-app, push.",
     "type": "library",
     "license": "MIT",
+    "keywords": [
+        "laravel",
+        "notification",
+        "email",
+        "sms",
+        "whatsapp",
+        "push",
+        "in-app",
+        "moe"
+    ],
     "authors": [
         {
             "name": "MindOfEmanizer",
             "email": "mindofemanizer@users.noreply.github.com"
         }
     ],
+    "support": {
+        "issues": "https://github.com/mindofemanizer/MOE-Laravel-Notify/issues",
+        "source": "https://github.com/mindofemanizer/MOE-Laravel-Notify"
+    },
     "require": {
         "php": "^8.2",
         "illuminate/support": "^11 | ^12 | ^13",
@@ -45,6 +59,7 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "config": {
+        "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true
         }

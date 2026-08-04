@@ -1,4 +1,4 @@
-﻿{
+{
     "name":  "moe/laravel-notify",
     "description":  "MOE multi-channel notification package for Laravel â€” email, SMS, WhatsApp, in-app, push.",
     "type":  "library",

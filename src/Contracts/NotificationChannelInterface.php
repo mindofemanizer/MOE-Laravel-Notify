@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MOE\Notify\Contracts;
+namespace Moe\Notify\Contracts;
 
-use MOE\Notify\Models\Notification;
+use Moe\Notify\Models\Notification;
 
 interface NotificationChannelInterface
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MOE\Notify\Models;
+namespace Moe\Notify\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

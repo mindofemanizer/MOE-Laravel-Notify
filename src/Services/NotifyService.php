@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace MOE\Notify\Services;
+namespace Moe\Notify\Services;
 
 use Illuminate\Support\Facades\Log;
-use MOE\Notify\Contracts\NotifierInterface;
-use MOE\Notify\Contracts\NotificationChannelInterface;
-use MOE\Notify\Exceptions\NotificationFailedException;
-use MOE\Notify\Models\Notification;
+use Moe\Notify\Contracts\NotifierInterface;
+use Moe\Notify\Contracts\NotificationChannelInterface;
+use Moe\Notify\Exceptions\NotificationFailedException;
+use Moe\Notify\Models\Notification;
 
 class NotifyService implements NotifierInterface
 {

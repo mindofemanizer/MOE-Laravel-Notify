@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-use MOE\Notify\Contracts\NotifierInterface;
-use MOE\Notify\Facades\Notify;
-use MOE\Notify\Models\Notification;
-use MOE\Notify\Tests\TestCase;
+use Moe\Notify\Contracts\NotifierInterface;
+use Moe\Notify\Facades\Notify;
+use Moe\Notify\Models\Notification;
+use Moe\Notify\Tests\TestCase;
 
 uses(TestCase::class);
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MOE\Notify\Exceptions;
+namespace Moe\Notify\Exceptions;
 
 use InvalidArgumentException;
 

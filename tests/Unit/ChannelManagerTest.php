@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-use MOE\Notify\Channels\MailChannel;
-use MOE\Notify\Contracts\NotificationChannelInterface;
-use MOE\Notify\Services\ChannelManager;
-use MOE\Notify\Tests\TestCase;
+use Moe\Notify\Channels\MailChannel;
+use Moe\Notify\Contracts\NotificationChannelInterface;
+use Moe\Notify\Services\ChannelManager;
+use Moe\Notify\Tests\TestCase;
 
 uses(TestCase::class);
 

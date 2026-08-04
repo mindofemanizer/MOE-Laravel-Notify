@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace MOE\Notify\Channels;
+namespace Moe\Notify\Channels;
 
-use MOE\Notify\Contracts\NotificationChannelInterface;
-use MOE\Notify\Models\Notification;
+use Moe\Notify\Contracts\NotificationChannelInterface;
+use Moe\Notify\Models\Notification;
 
 class DatabaseChannel implements NotificationChannelInterface
 {

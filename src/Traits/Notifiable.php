@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace MOE\Notify\Traits;
+namespace Moe\Notify\Traits;
 
 use Illuminate\Database\Eloquent\Relations\MorphMany;
-use MOE\Notify\Models\Notification;
+use Moe\Notify\Models\Notification;
 
 trait Notifiable
 {

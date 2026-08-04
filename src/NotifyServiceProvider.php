@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace MOE\Notify;
+namespace Moe\Notify;
 
 use Illuminate\Support\ServiceProvider;
-use MOE\Notify\Contracts\NotifierInterface;
-use MOE\Notify\Services\NotifyService;
-use MOE\Notify\Services\ChannelManager;
+use Moe\Notify\Contracts\NotifierInterface;
+use Moe\Notify\Services\NotifyService;
+use Moe\Notify\Services\ChannelManager;
 
 class NotifyServiceProvider extends ServiceProvider
 {

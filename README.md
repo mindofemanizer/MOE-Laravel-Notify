@@ -11,7 +11,7 @@ Package notifikasi multichannel untuk Laravel — email, SMS, WhatsApp, in-app, 
 
 ```bash
 composer require moe/laravel-notify
-php artisan vendor:publish --provider="MOE\\Notify\\NotifyServiceProvider" --tag="moe-notify-config"
+php artisan vendor:publish --provider="Moe\\Notify\\NotifyServiceProvider" --tag="moe-notify-config"
 php artisan migrate
 ```
 
@@ -20,8 +20,8 @@ php artisan migrate
 ### 1. Kirim notifikasi
 
 ```php
-use MOE\Notify\Facades\Notify;
-use MOE\Notify\Models\Notification;
+use Moe\Notify\Facades\Notify;
+use Moe\Notify\Models\Notification;
 
 $notif = new Notification([
     'type' => 'welcome',
@@ -51,7 +51,7 @@ $channel->send($user, $notif);
 ### Notifiable (Trait)
 
 ```php
-use MOE\Notify\Traits\Notifiable;
+use Moe\Notify\Traits\Notifiable;
 
 class User extends Model
 {
@@ -80,7 +80,7 @@ Channel adalah driver pengirim notifikasi. Bawaan:
 ### Channel Kustom
 
 ```php
-use MOE\Notify\Contracts\NotificationChannelInterface;
+use Moe\Notify\Contracts\NotificationChannelInterface;
 
 class TelegramChannel implements NotificationChannelInterface
 {
@@ -95,7 +95,7 @@ class TelegramChannel implements NotificationChannelInterface
 }
 
 // Daftarkan
-$manager = app(\MOE\Notify\Services\ChannelManager::class);
+$manager = app(\Moe\Notify\Services\ChannelManager::class);
 $manager->register('telegram', TelegramChannel::class);
 ```
 

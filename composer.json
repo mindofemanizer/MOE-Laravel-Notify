@@ -24,18 +24,18 @@
     },
     "autoload": {
         "psr-4": {
-            "MOE\\Notify\\": "src/"
+            "Moe\\Notify\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MOE\\Notify\\Tests\\": "tests/"
+            "Moe\\Notify\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "MOE\\Notify\\NotifyServiceProvider"
+                "Moe\\Notify\\NotifyServiceProvider"
             ]
         }
     },

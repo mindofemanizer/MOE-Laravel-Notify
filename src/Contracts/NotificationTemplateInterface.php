@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MOE\Notify\Contracts;
+namespace Moe\Notify\Contracts;
 
 interface NotificationTemplateInterface
 {

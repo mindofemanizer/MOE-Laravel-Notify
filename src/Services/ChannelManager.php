@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace MOE\Notify\Services;
+namespace Moe\Notify\Services;
 
 use InvalidArgumentException;
-use MOE\Notify\Channels\DatabaseChannel;
-use MOE\Notify\Channels\MailChannel;
-use MOE\Notify\Channels\SmsChannel;
-use MOE\Notify\Channels\WhatsappChannel;
-use MOE\Notify\Contracts\NotificationChannelInterface;
+use Moe\Notify\Channels\DatabaseChannel;
+use Moe\Notify\Channels\MailChannel;
+use Moe\Notify\Channels\SmsChannel;
+use Moe\Notify\Channels\WhatsappChannel;
+use Moe\Notify\Contracts\NotificationChannelInterface;
 
 class ChannelManager
 {

@@ -24,12 +24,12 @@ class NotifyServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
+        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
+
         if ($this->app->runningInConsole()) {
             $this->publishes([
                 __DIR__ . '/../config/moe-notify.php' => config_path('moe-notify.php'),
             ], 'moe-notify-config');
-
-            $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
         }
     }
 }
